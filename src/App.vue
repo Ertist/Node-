@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <cn-Header></cn-Header>
+    <router-view name='main'></router-view>
   </div>
 </template>
 
