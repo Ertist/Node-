@@ -5,7 +5,7 @@
     </div>
     <div class="posts" v-else>
       <ul>
-        <li v-for="post in posts" :key="post.id">
+        <li v-for="post in posts" :key="post">
           <router-link :to="{name: 'user_info', params: {name: post.author.loginname}}" :title="post.author_id">
             <img :src="post.author.avatar_url" :title="post.author.loginname" />
           </router-link>
@@ -27,7 +27,7 @@
 <script>
 export default {
   name: 'PostList',
-  date () {
+  data () {
     return {
       posts: {},
       loading: false

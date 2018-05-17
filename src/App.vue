@@ -2,6 +2,7 @@
   <div id="app">
     <cn-Header></cn-Header>
     <router-view name='main'></router-view>
+    <router-view name="sidebar"></router-view>
   </div>
 </template>
 

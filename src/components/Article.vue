@@ -82,7 +82,7 @@ export default {
         }
       })
         .then((response) => {
-          if (response.data.sucess === true) {
+          if (response.data.success === true) {
             this.post = response.data.data
             this.loading = false
           }

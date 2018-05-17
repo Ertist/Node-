@@ -5,7 +5,7 @@
     </div>
     <div class="userInfomation" v-else>
       <section>
-        <img :src="UserInfo.avatar_url" :title="userinfo.loginname">
+        <img :src="userinfo.avatar_url" :title="userinfo.loginname">
         <span>{{userinfo.loginname}}</span>
         <p>{{userinfo.score}} 积分</p>
         <p>注册时间：{{userinfo.create_at | formatDate}}</p>

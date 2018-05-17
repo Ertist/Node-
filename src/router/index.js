@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import PostList from '@/components/PostList'
 import Article from '@/components/Article'
-// import SideBar from '@/components/SideBar'
+import SideBar from '@/components/SideBar'
 import UserInfo from '@/components/UserInfo'
+
 Vue.use(Router)
 
 export default new Router({
@@ -20,7 +21,8 @@ export default new Router({
       path: '/topic/:id&auther=:name',
       name: 'post_content',
       components: {
-        main: Article
+        main: Article,
+        sidebar: SideBar
       }
     },
     {
